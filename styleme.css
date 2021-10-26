@@ -1,0 +1,21 @@
+ul {
+  color: blue;
+}
+
+h2 {
+  color: blueviolet;
+}
+
+h1 {
+  font-family: Georgia;
+  font-weight: bold;
+  font-style: italic;
+}
+
+ol {
+  font-family: "Courier New", Courier, monospace;
+}
+
+* {
+  background-color: whitesmoke;
+}
