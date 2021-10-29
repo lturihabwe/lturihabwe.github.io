@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="signup.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <form action="http://mumstudents.org/params.php" method="post">
+      <div>
+        <fieldset
+          style="background-color: lavender; width: 50%; border-radius: 10px"
+        >
+          <legend style="border-style: outset; background-color: white">
+            New User Signup:
+          </legend>
+          <label>Name:</label>
+          <input type="text" name="username" size="20" /><br />
+          <p></p>
+          <label> Gender:</label>
+          <input type="radio" name="gender" value="male" checked /> Male
+          <input type="radio" name="gender" value="female" /> Female <br />
+          <p></p>
+          <label>Age:</label> <input type="text" size="6" maxlength="2" />
+          <br />
+          <p></p>
+          <label>Personality Type: </label>
+          <input type="text" name="personality" size="6" maxlength="2" />
+          <a href="https://www.keirsey.com/" style="color: lightcoral"
+            >(Don't know your type?)</a
+          >
+          <br />
+          <p></p>
+          <label>Favorite OS:</label>
+          <select name="favoriteos">
+            <option value="windows" selected>Windows</option>
+            <option value="mac">Mac OS X</option>
+            <option value="linux">Linux</option>
+          </select>
+          <br />
+          <p></p>
+          <label>Seeking Age:</label>
+          <input type="text" placeholder="min" size="6" maxlength="2" />
+          <input type="text" placeholder="max" size="6" maxlength="2" /> <br />
+          <p></p>
+          <label>
+            <input
+              type="submit"
+              value="Sign Up"
+              style="background-color: lightcoral; font-weight: bold"
+            />
+          </label>
+        </fieldset>
+      </div>
+    </form>
+  </body>
+</html>
