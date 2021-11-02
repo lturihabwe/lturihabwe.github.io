@@ -14,7 +14,6 @@ function enlargeText() {
 }
 
 function boldText() {
-    console.log("hello");
     if (document.getElementById("bling").checked == true) {
         document.getElementById("textarea").style.fontWeight = "bold";
         document.getElementById("textarea").style.color = "green";
