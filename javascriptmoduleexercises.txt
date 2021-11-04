@@ -22,7 +22,7 @@ document.write(b);
 document.write(x);
 
 Answer:
-1889101
+undefined889101
 
 
 2. Define Global Scope and Local Scope in Javascript. 
@@ -128,9 +128,11 @@ var  make_adder = function (inc) {
 
 
 9. Suppose you are given a file of Javascript code containing a list of many function and variable declarations. All of these function and variable names will be added to the Global Javascript namespace. What simple modification to the Javascript file can remove all the names from the Global namespace?
-Answer:
-Execute the module pattern in order to create private methods and fields by grouping related functions into a single module object.
 
+Answer:
+(function () {
+    // code
+})();
 
 10. Using the Revealing Module Pattern, write a Javascript definition of a Module that creates an Employee Object with the following fields and methods:
 Private Field: name 
@@ -148,9 +150,9 @@ Public Method: incrementAge( ) // uses private getAge()
 
 Answer:
 let employee = (function () {
-   let name;
-   let age;
-   let salary;
+   let name = "";
+   let age = 0;
+   let salary = 0;
 
     let setAge = function(newAge){
         age = newAge;
@@ -200,9 +202,9 @@ let employee = (function () {
 
 Answer:
 let employee = ( function () {
-    let name;
-    let age;
-    let salary;
+    let name = "";
+   let age = 0;
+   let salary = 0;
 
     let getAge = function(){
         return age;
@@ -237,9 +239,9 @@ let employee = ( function () {
 12. Rewrite your answer to Question 10 using the Locally Scoped Object Literal Pattern.
 Answer:
 var employee = ( function () {
-    let name;
-    let age;
-    let salary;
+     let name = "";
+   let age = 0;
+   let salary = 0;
 
     let getAge = function(){
         return age;
@@ -280,9 +282,14 @@ var employee = ( function () {
 13. Write a few Javascript instructions to extend the Module of Question 10 to have a public address field and public methods setAddress(newAddress) and getAddress( ).
 
 Answer:
+employee.address = "";
+
 employee.setAddress = function (newAddress) {
-    let address;
-    address = newAddress;
+    this.address = newAddress;
+};
+
+employee.getAddress = function(){
+    return this.address;
 };
 
 
@@ -292,7 +299,7 @@ const promise = new Promise((resolve, reject) => { reject(“Hattori”);
 promise.then(val => alert(“Success: “ + val)) .catch(e => alert(“Error: “ + e));
 
 Answer:
-Error: Hattori
+Promise is explicitly rejected. Error handler will be invoked.
 
 
 15. What is the output of the following code?
@@ -301,7 +308,7 @@ setTimeout(()=> reject(“Yoshi”), 500); });
 promise.then(val => alert(“Success: “ + val)) .catch(e => alert(“Error: “ + e));
 
 Answer:
-Succes: Hattori
+Once a promise has been settled, it can't be changed. Rejecting it after 500ms will have no effect. The success handler will be invoked.
 
 
 16. What is the output of the following code?
