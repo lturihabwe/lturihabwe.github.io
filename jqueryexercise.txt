@@ -18,7 +18,7 @@ Sample HTML:
 
 Answer:
 $document.ready( function () {
-    $(div > h1).css({"background-color":"red"});
+    $("div > h1").css({"background-color":"red"});
 });
 
 
@@ -29,7 +29,7 @@ $document.ready( function () {
 <script>
 
 $document.ready(function () {
-    $(p).append("YES!");
+    $("p").append("YES!");
 });
 
 </script>
