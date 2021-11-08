@@ -17,7 +17,7 @@ Sample HTML:
 </body>
 
 Answer:
-$document.ready( function () {
+$(document).ready( function () {
     $("div > h1").css({"background-color":"red"});
 });
 
@@ -28,7 +28,7 @@ $document.ready( function () {
 <head>
 <script>
 
-$document.ready(function () {
+$(document).ready(function () {
     $("p").append("YES!");
 });
 
