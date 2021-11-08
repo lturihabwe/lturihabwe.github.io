@@ -3,7 +3,7 @@ jQuery Quiz I
 1. In jQuery terminology, what is the difference between the “jQuery function” and the “jQuery object”?
 Answer:
 The JQuery function is the one whose job is to grab the elements you put into its parenthenses.
-The JQuery object is what is returned when a JQuery function is invoked with a selector.
+The JQuery object is what is returned when a JQuery function is invoked with a selector.It contains a collection of DOM elements for manipulation.
 
 
 2. Write jQuery code to find all h1 elements that are children of a div element and make their background color red.
