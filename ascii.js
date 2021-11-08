@@ -74,4 +74,5 @@ function stop(){
     chooseAnimation();
     document.getElementById("start").disabled = false;
     document.getElementById("fast").checked=false;
+    document.getElementById("animation").disabled = false;
 }
