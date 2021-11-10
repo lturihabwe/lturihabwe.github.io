@@ -1,4 +1,4 @@
-"use strict";
+
 $(document).ready(function () {
     var counter = 0;//count variable for left and right positioning
     var arrElem = []; //array used for storing the filled position for shuffling
